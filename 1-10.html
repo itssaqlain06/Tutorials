@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query Conditional Rendering</title>
+    <style>
+      /* Base styling */
+      .text p {
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+      }
+
+      /* Extra small (xs) screens (max-width: 575px) */
+      @media (max-width: 575px) {
+        .xs {
+          background-color: #f44336;
+        }
+      }
+
+      /* Small (sm) screens (576px - 767px) */
+      @media (min-width: 576px) and (max-width: 767px) {
+        .sm {
+          background-color: #2196f3;
+        }
+      }
+
+      /* Medium (md) screens (768px - 991px) */
+      @media (min-width: 768px) and (max-width: 991px) {
+        .md {
+          background-color: #4caf50;
+        }
+      }
+
+      /* Large (lg) screens (992px - 1199px) */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        .lg {
+          background-color: #ffc107;
+        }
+      }
+
+      /* Extra large (xl) screens (1200px and above) */
+      @media (min-width: 1200px) {
+        .xl {
+          background-color: #9c27b0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <p class="xs">This is displayed on extra small screens (xs).</p>
+      <p class="sm">This is displayed on small screens (sm).</p>
+      <p class="md">This is displayed on medium screens (md).</p>
+      <p class="lg">This is displayed on large screens (lg).</p>
+      <p class="xl">This is displayed on extra large screens (xl).</p>
+    </div>
+  </body>
+</html>
